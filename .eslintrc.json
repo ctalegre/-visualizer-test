@@ -33,7 +33,7 @@
             "tags": [],
             "classRegex": "^class(Name)?$" // can be modified to support custom attributes. E.g. "^tw$" for `twin.macro`
           }
-      },    
+      },
     "overrides": [
     ],
     "parserOptions": {
@@ -50,7 +50,7 @@
     "rules": {
         "react/prop-types": 0,
         "no-unused-expressions": 0,
-        "space-before-function-paren": ["error", "never"],
+        // "space-before-function-paren": ["error", "never"],
         "chai-friendly/no-unused-expressions": 2,
         "react-hooks/rules-of-hooks": "error",
         "react-hooks/exhaustive-deps": "warn",
