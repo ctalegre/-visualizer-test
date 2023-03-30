@@ -1,4 +1,5 @@
 {
+    "root": true,
     "env": {
         "browser": true,
         "es2021": true,
@@ -9,10 +10,29 @@
         "plugin:react/recommended",
         "standard",
         "eslint:recommended",
-        "plugin:react/jsx-runtime"
+        "plugin:react/jsx-runtime",
+        "plugin:tailwindcss/recommended"
     ],
     "settings": {
-        "react": { "version": "detect" }
+        "react": { "version": "detect" },
+        "tailwindcss": {
+            // These are the default values but feel free to customize
+            "callees": ["classnames", "clsx", "ctl"],
+            "config": "tailwind.config.js",
+            "cssFiles": [
+              "**/*.css",
+              "!**/node_modules",
+              "!**/.*",
+              "!**/dist",
+              "!**/build"
+            ],
+            "cssFilesRefreshRate": 5.000,
+            "removeDuplicates": true,
+            "skipClassAttribute": false,
+            "whitelist": [],
+            "tags": [],
+            "classRegex": "^class(Name)?$" // can be modified to support custom attributes. E.g. "^tw$" for `twin.macro`
+          }
       },    
     "overrides": [
     ],
@@ -36,5 +56,6 @@
         "react-hooks/exhaustive-deps": "warn",
         "react/display-name": "off",
         "no-unused-vars": "warn"
+        // "comma-dangle": 0,
     }
 }
