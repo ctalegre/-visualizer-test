@@ -1,0 +1,22 @@
+[
+  {
+      "name": "Morse White Nature",
+      "materialPreview": "https://firebasestorage.googleapis.com/v0/b/visualizer-new-devs-test.appspot.com/o/materials_1565617496107_preview.jpeg?alt=media&token=f6030af0-f889-45b7-a2bd-2f4d959c6b70",
+      "points": [
+          "EnRd7hAaNydVdVJ06qgF"
+      ],
+      "layers": {
+          "EnRd7hAaNydVdVJ06qgF": "https://firebasestorage.googleapis.com/v0/b/visualizer-new-devs-test.appspot.com/o/materials_1565617496107_KTQyQxRXM6se2nREr5zZ-1591364026128-EnRd7hAaNydVdVJ06qgF.png?alt=media&token=b3052e46-69a6-40b0-a930-b75bee28dce0"
+      }
+  },
+  {
+      "name": "Morse Grey Nature",
+      "points": [
+          "EnRd7hAaNydVdVJ06qgF"
+      ],
+      "layers": {
+          "EnRd7hAaNydVdVJ06qgF": "https://firebasestorage.googleapis.com/v0/b/visualizer-new-devs-test.appspot.com/o/materials_1565617431796_KTQyQxRXM6se2nREr5zZ-1591364026128-EnRd7hAaNydVdVJ06qgF.png?alt=media&token=a7f752af-e056-498e-b569-394f4e4c715e"
+      },
+      "materialPreview": "https://firebasestorage.googleapis.com/v0/b/visualizer-new-devs-test.appspot.com/o/materials_1565617431796_preview.jpeg?alt=media&token=504090f9-1f7b-4d59-a02a-5adaecf7b177"
+  }
+]

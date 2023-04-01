@@ -15,7 +15,6 @@ export default function Home () {
   const [materialsList, setMaterialsList] = useState([])
   const loadMaterials = async (pointId) => {
     const materials = await api.materials.getByPointId(pointId)
-    console.log(materials)
     setMaterialsList(materials)
   }
 

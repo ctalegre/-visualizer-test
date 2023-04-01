@@ -1,0 +1,32 @@
+[
+  {
+      "points": [
+          "cd84QwP9gOhAU5p47UDn"
+      ],
+      "materialPreview": "https://firebasestorage.googleapis.com/v0/b/visualizer-new-devs-test.appspot.com/o/materials_1591111746483_preview.jpeg?alt=media&token=62e9f005-316c-4298-b635-4efc984f8af6",
+      "layers": {
+          "cd84QwP9gOhAU5p47UDn": "https://firebasestorage.googleapis.com/v0/b/visualizer-new-devs-test.appspot.com/o/materials_1591111746483_KTQyQxRXM6se2nREr5zZ-1591364026128-cd84QwP9gOhAU5p47UDn.png?alt=media&token=c78cdeb7-f2c8-4842-a522-0b1e04e842ef"
+      },
+      "name": "Aged Clay Nature"
+  },
+  {
+      "materialPreview": "https://firebasestorage.googleapis.com/v0/b/visualizer-new-devs-test.appspot.com/o/materials_1591708884806_preview.jpeg?alt=media&token=366ad80e-73ac-4711-90a3-79c1f1f5b1aa",
+      "points": [
+          "cd84QwP9gOhAU5p47UDn"
+      ],
+      "layers": {
+          "cd84QwP9gOhAU5p47UDn": "https://firebasestorage.googleapis.com/v0/b/visualizer-new-devs-test.appspot.com/o/materials_1591708884806_KTQyQxRXM6se2nREr5zZ-1591364026128-cd84QwP9gOhAU5p47UDn.png?alt=media&token=0192e8ae-b46a-47a0-ab34-f54afff58210"
+      },
+      "name": "Aged Dark Nature"
+  },
+  {
+      "materialPreview": "https://firebasestorage.googleapis.com/v0/b/visualizer-new-devs-test.appspot.com/o/materials_1591712655524_preview.jpeg?alt=media&token=0d03c9e3-9342-452b-84d8-0d1e4c553c83",
+      "points": [
+          "cd84QwP9gOhAU5p47UDn"
+      ],
+      "layers": {
+          "cd84QwP9gOhAU5p47UDn": "https://firebasestorage.googleapis.com/v0/b/visualizer-new-devs-test.appspot.com/o/materials_1591712655524_KTQyQxRXM6se2nREr5zZ-1591364026128-cd84QwP9gOhAU5p47UDn.png?alt=media&token=eff7282e-5460-42d4-9345-b871528cddef"
+      },
+      "name": "Frame White"
+  }
+]
