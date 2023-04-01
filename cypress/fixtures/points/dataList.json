@@ -1,0 +1,26 @@
+[
+  {
+      "_id": "EnRd7hAaNydVdVJ06qgF",
+      "coordY": 86,
+      "coordX": 40,
+      "name": "Pavimento"
+  },
+  {
+      "_id": "Ks5CthbPwAvd2TNxzHEl",
+      "name": "Frente",
+      "coordX": 71,
+      "coordY": 38
+  },
+  {
+      "_id": "cd84QwP9gOhAU5p47UDn",
+      "name": "Encimera",
+      "coordX": 52,
+      "coordY": 55
+  },
+  {
+      "_id": "i7EVutewtycZY2qwmldG",
+      "coordX": 61,
+      "coordY": 47,
+      "name": "Entrepaños"
+  }
+]

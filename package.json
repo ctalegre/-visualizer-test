@@ -7,8 +7,8 @@
     "commitlint": "commitlint",
     "lint": "next lint",
     "lint:fix": "next lint --fix",
-    "cy": "npx cypress run",
-    "cy:open": "npx cypress open"
+    "e2e": "npx cypress run",
+    "e2e:browser": "npx cypress run --headed --no-exit"
   },
   "dependencies": {
     "firebase": "^9.6.1",
