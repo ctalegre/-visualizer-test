@@ -6,7 +6,9 @@
     "start": "next start",
     "commitlint": "commitlint",
     "lint": "next lint",
-    "lint:fix": "next lint --fix"
+    "lint:fix": "next lint --fix",
+    "cy": "npx cypress run",
+    "cy:open": "npx cypress open"
   },
   "dependencies": {
     "firebase": "^9.6.1",
@@ -17,6 +19,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.0",
+    "cypress": "^12.9.0",
     "eslint": "^8.37.0",
     "eslint-config-standard": "^17.0.0",
     "eslint-plugin-chai-friendly": "^0.7.2",
