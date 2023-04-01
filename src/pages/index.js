@@ -23,7 +23,8 @@ export default function Home () {
   return (
     <div className='flex min-h-screen flex-col items-center justify-center py-2'>
       <div style={{ position: 'relative' }}>
-        <img src={'https://firebasestorage.googleapis.com/v0/b/visualizer-new-devs-test.appspot.com/o/base.jpeg?alt=media&token=358ccdea-3cf9-4751-ae48-4631e4700554'} />
+        <img data-test='visualizer-base-img' src={'https://firebasestorage.googleapis.com/v0/b/visualizer-new-devs-test.appspot.com/o/base.jpeg?alt=media&token=358ccdea-3cf9-4751-ae48-4631e4700554'} />
+
         {pointsList.map((point, i) => {
           return <div key={point._id}>
           {layoutImgMap[point._id] && <img src={layoutImgMap[point._id]}
