@@ -18,9 +18,9 @@ export const materialsSlice = createSlice({
   initialState,
   reducers: {
     applyMaterialByPointId: (state, action) => {
-      const { pointId, ...material } = action.payload
+      const { pointId } = action.payload
 
-      if (pointId) state.materialAppliedMap[pointId] = material
+      if (pointId) state.materialAppliedMap[pointId] = action.payload
     }
   },
   extraReducers: (builder) => {

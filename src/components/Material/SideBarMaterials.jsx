@@ -11,7 +11,8 @@ function SideBarMaterials (props) {
   function applyMaterial (material) {
     const pointId = material.points[0]
     const materialUrl = material.layers[pointId]
-    dispatch(applyMaterialByPointId({ pointId, image: materialUrl }))
+    const name = material.name
+    dispatch(applyMaterialByPointId({ pointId, name, image: materialUrl }))
   }
 
   return (

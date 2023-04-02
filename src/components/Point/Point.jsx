@@ -9,9 +9,13 @@ function Point (props) {
     <div
       onClick={onClick}
       style={{ left: `${point.coordX}%`, top: `${point.coordY}%` }}
-      className={'absolute z-[4] translate-x-[-1]'}
+      className={'absolute z-[4]'}
       >
-      <img className='h-9 w-9' src={FINGERPRINT} />
+        <div style={{ background: 'rgb(112 112 112 / 68%)', borderRadius: '100%', padding: 2 }}>
+          <div style={{ background: 'rgb(112 112 112 / 68%)', borderRadius: '100%', padding: 4, border: '2px solid white' }}>
+            <img style={{ filter: 'invert(1)', transform: 'scaleX(-1)', rotate: '18deg', padding: 2 }} className='h-9 w-9' src={FINGERPRINT} />
+          </div>
+        </div>
     </div>
   )
 }
