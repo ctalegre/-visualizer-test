@@ -28,7 +28,7 @@
             ],
             "cssFilesRefreshRate": 5.000,
             "removeDuplicates": true,
-            "skipClassAttribute": false,
+            // "skipClassAttribute": false,
             "whitelist": [],
             "tags": [],
             "classRegex": "^class(Name)?$" // can be modified to support custom attributes. E.g. "^tw$" for `twin.macro`
@@ -50,12 +50,12 @@
     "rules": {
         "react/prop-types": 0,
         "no-unused-expressions": 0,
-        // "space-before-function-paren": ["error", "never"],
+        "space-before-function-paren": ["error", "always"],
         "chai-friendly/no-unused-expressions": 2,
         "react-hooks/rules-of-hooks": "error",
         "react-hooks/exhaustive-deps": "warn",
         "react/display-name": "off",
-        "no-unused-vars": "warn"
-        // "comma-dangle": 0,
+        "no-unused-vars": "warn",
+        "comma-dangle": 0
     }
 }

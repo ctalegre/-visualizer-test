@@ -10,8 +10,8 @@ class MaterialsCollection {
 
     return getDocs(queryDocs)
       .then((querySnapshot) => {
-        const pointsList = querySnapshot.docs.map((doc) => doc.data())
-        return pointsList
+        const pointList = querySnapshot.docs.map((doc) => doc.data())
+        return pointList
       })
   }
 }
