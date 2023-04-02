@@ -2,7 +2,7 @@ import { collection, getFirestore, getDocs, where, query } from 'firebase/firest
 import firebaseApp from '../firebaseApp'
 
 class MaterialsCollection {
-  async getByPointId (pointId = 'EnRd7hAaNydVdVJ06qgF') {
+  async getByPointId (pointId) {
     const db = getFirestore(firebaseApp)
     const materialsRef = collection(db, 'materials')
 

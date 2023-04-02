@@ -12,6 +12,8 @@ function SideBarMaterials (props) {
     const pointId = material.points[0]
     const materialUrl = material.layers[pointId]
     const name = material.name
+
+    // TODO: backdrop
     dispatch(applyMaterialByPointId({ pointId, name, image: materialUrl }))
   }
 

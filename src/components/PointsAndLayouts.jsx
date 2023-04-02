@@ -21,6 +21,7 @@ function PointsAndLayouts (props) {
     dispatch(getMaterialsFromApi(pointId))
   }
 
+  // TODO: cambiar materialAppliedMap a algo asi como active...
   const materialAppliedMap = useSelector((state) => state.materialsSlice.materialAppliedMap)
   return pointList.map((point, i) => {
     const selectedMaterial = materialAppliedMap[point._id]
