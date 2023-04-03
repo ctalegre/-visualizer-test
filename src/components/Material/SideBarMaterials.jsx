@@ -2,6 +2,8 @@ import { useDispatch, useSelector } from 'react-redux'
 import { applyMaterialByPointId } from '../../redux/reducers/materialsSlice'
 import Material from './Material'
 import ArrowIcon from '../../assets/ArrowIcon'
+import { setActiveShowBackdrop, setActiveShowMaterials } from '../../redux/reducers/uiSlice'
+import { sleep } from '../utils/sleep'
 
 function SideBarMaterials (props) {
   const dispatch = useDispatch()
@@ -9,13 +11,19 @@ function SideBarMaterials (props) {
   const materialList = useSelector((state) => state.materialsSlice.materialList)
   // const isLoadingMaterialList = useSelector((state) => state.pointsSlice.isLoading)
 
-  function applyMaterial (material) {
+  async function applyMaterial (material) {
     const pointId = material.points[0]
     const materialUrl = material.layers[pointId]
     const name = material.name
 
-    // TODO: backdrop
     dispatch(applyMaterialByPointId({ pointId, name, image: materialUrl }))
+    await applyLoadingApply()
+  }
+
+  async function applyLoadingApply () {
+    dispatch(setActiveShowBackdrop())
+    await sleep(150)
+    dispatch(setActiveShowMaterials())
   }
 
   const showingInView = useSelector((state) => state.uiSlice.showingInView)

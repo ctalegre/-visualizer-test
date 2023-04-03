@@ -1,4 +1,5 @@
 
+import Loading from '../components/Loading'
 import BackgroundLayout from '../components/Layout/BackgroundLayout'
 import SideBarMaterials from '../components/Material/SideBarMaterials'
 
@@ -11,6 +12,7 @@ export default function Home () {
         <BackgroundLayout />
         <PointsAndLayouts />
         <SideBarMaterials />
+        <Loading />
       </div>
     </div>
   )

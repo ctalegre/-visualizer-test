@@ -15,7 +15,7 @@ export const uiSlice = createSlice({
       state.showingInView = 'Materials'
     },
     setActiveShowBackdrop: (state, action) => {
-      state.showingInView = 'Backdrop'
+      state.showingInView = 'Loading'
     }
   },
 })
