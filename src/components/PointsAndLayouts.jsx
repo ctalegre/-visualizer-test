@@ -1,10 +1,11 @@
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import Layout from './Layout/Layout'
 import Point from './Point/Point'
 
 import { useDispatch, useSelector } from 'react-redux'
 import { getPointsFromApi } from '../redux/reducers/pointsSlice'
 import { getMaterialsFromApi } from '../redux/reducers/materialsSlice'
+import { setActiveShowMaterials } from '../redux/reducers/uiSlice'
 
 function PointsAndLayouts (props) {
   const dispatch = useDispatch()
@@ -19,6 +20,7 @@ function PointsAndLayouts (props) {
 
   const loadMaterials = async (pointId) => {
     dispatch(getMaterialsFromApi(pointId))
+    dispatch(setActiveShowMaterials())
   }
 
   // TODO: cambiar materialAppliedMap a algo asi como active...

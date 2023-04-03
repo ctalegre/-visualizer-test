@@ -18,8 +18,11 @@ function SideBarMaterials (props) {
     dispatch(applyMaterialByPointId({ pointId, name, image: materialUrl }))
   }
 
+  const showingInView = useSelector((state) => state.uiSlice.showingInView)
+  const finalClass = showingInView !== 'Materials' ? 'hidden' : ''
+
   return (
-    <div className='fixed right-[20px] top-[0px] z-[5] flex h-full items-center'>
+    <div className={`${finalClass} fixed right-[20px] top-[0px] z-[5] flex h-full items-center`}>
       <div className='flex flex-col items-end'>
         <div className='mx-[12px]'>
           <ArrowIcon direction='up' />

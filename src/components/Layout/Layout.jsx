@@ -1,11 +1,14 @@
 import PropTypes from 'prop-types'
+import { useDispatch } from 'react-redux'
+import { setActiveShowPoints } from '../../redux/reducers/uiSlice'
 
 function Layout (props) {
-  if (!props.src) return ''
+  const dispatch = useDispatch()
 
   const zIndexClass = (props.index && `z-[3.${props.index}]`) || 'z-0'
   return (
     <img
+      onClick={() => dispatch(setActiveShowPoints())}
       src={props.src}
       className={`absolute left-0 top-0 h-full w-full rounded-[25px] ${zIndexClass}`}
     />
