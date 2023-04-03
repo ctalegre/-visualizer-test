@@ -28,7 +28,7 @@
             ],
             "cssFilesRefreshRate": 5.000,
             "removeDuplicates": true,
-            "skipClassAttribute": false,
+            // "skipClassAttribute": false,
             "whitelist": [],
             "tags": [],
             "classRegex": "^class(Name)?$" // can be modified to support custom attributes. E.g. "^tw$" for `twin.macro`

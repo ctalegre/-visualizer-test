@@ -1,5 +1,6 @@
 import { initializeApp } from 'firebase/app'
 
+// TODO: ENV
 const config = {
   apiKey: 'AIzaSyC_JwpXS4uj9sRRDrbFAtalE1QulNTmKnw',
   authDomain: 'visualizer-new-devs-test.firebaseapp.com',

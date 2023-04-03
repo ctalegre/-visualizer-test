@@ -6,11 +6,11 @@ class PointsCollection {
     const db = getFirestore(firebaseApp)
     return getDocs(collection(db, 'points'))
       .then((querySnapshot) => {
-        const pointsList = querySnapshot.docs.map((doc) => ({
+        const pointList = querySnapshot.docs.map((doc) => ({
           _id: doc.id,
           ...doc.data()
         }))
-        return pointsList
+        return pointList
       })
   }
 }
