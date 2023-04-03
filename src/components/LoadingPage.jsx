@@ -1,6 +1,6 @@
 import { useSelector } from 'react-redux'
 
-function Loading (props) {
+function Loading () {
   const showingInView = useSelector((state) => state.uiSlice.showingInView)
 
   const finalClass = showingInView !== 'Loading' ? 'hidden' : ''
@@ -11,7 +11,5 @@ function Loading (props) {
     />
   )
 }
-
-Loading.propTypes = {}
 
 export default Loading

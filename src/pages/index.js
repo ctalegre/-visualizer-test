@@ -1,20 +1,21 @@
+import { useSelector } from 'react-redux'
 
-import Loading from '../components/Loading'
-import BackgroundLayout from '../components/Layout/BackgroundLayout'
-import SideBarMaterials from '../components/Material/SideBarMaterials'
-
-import PointsAndLayouts from '../components/PointsAndLayouts'
 import Head from '../components/Head'
+import BackgroundLayout from '../components/Layout/BackgroundLayout'
+import PointsAndLayouts from '../components/PointsAndLayouts'
+import SideBarMaterials from '../components/Material/SideBarMaterials'
+import LoadingPage from '../components/LoadingPage'
 
-export default function Home () {
+export default function Kitchen () {
+  const title = useSelector((state) => state.roomSlice.description)
   return (
     <div className='flex min-h-screen flex-col items-center justify-center bg-[#c9c1bb] py-2'>
       <div className='relative'>
-        <Head />
+        <Head title={title} />
         <BackgroundLayout />
         <PointsAndLayouts />
         <SideBarMaterials />
-        <Loading />
+        <LoadingPage />
       </div>
     </div>
   )

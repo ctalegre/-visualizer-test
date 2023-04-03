@@ -17,7 +17,7 @@ function Point (props) {
       style={{ left: `${point.coordX}%`, top: `${point.coordY}%` }}
       className={`${finalClass} absolute z-[4] hover:cursor-pointer hover:opacity-20`}
       >
-        <div className='rounded-full p-0.5' style={{ background: 'rgb(112 112 112 / 68%)' }}>
+        <div className='rounded-full bg-[#767575ad] p-0.5'>
           <div className='rounded-full border-[1px] border-white bg-inherit p-[4px] sm:border-[2px]'>
             <img
               style={{ filter: 'invert(1)', transform: 'scaleX(-1)', rotate: '18deg' }}
