@@ -2,8 +2,8 @@
   "private": true,
   "scripts": {
     "dev": "env-cmd -f .env.local next dev",
-    "build": "env-cmd -f .env.local next build",
-    "start": "env-cmd -f .env.local next start",
+    "build": "next build",
+    "start": "next start",
     "commitlint": "commitlint",
     "lint": "next lint",
     "lint:fix": "next lint --fix"
