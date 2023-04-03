@@ -16,6 +16,7 @@ function Material (props) {
   const hiddenClass = !isMaterialActive() ? 'hidden' : ''
   return (
     <div
+      data-test='material'
       onClick={onClick}
       className='my-3 flex rounded-md border-4 border-[#f5f2ef] bg-[#f5f2ef] shadow-md hover:cursor-pointer'
     >

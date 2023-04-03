@@ -8,15 +8,15 @@ import ScreenLoading from '../components/ScreenLoading'
 
 export default function Kitchen () {
   const title = useSelector((state) => state.roomSlice.description)
-  return (
+  return (<>
+    <Head title={title} />
     <div className='flex min-h-screen flex-col items-center justify-center bg-[#c9c1bb] py-2'>
-      <div className='relative'>
-        <Head title={title} />
+      <div data-test='container-images' className='relative'>
         <BackgroundLayout />
         <PointsAndLayouts />
         <SideBarMaterials />
         <ScreenLoading />
       </div>
     </div>
-  )
+  </>)
 }
