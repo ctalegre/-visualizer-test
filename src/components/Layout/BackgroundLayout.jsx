@@ -5,6 +5,7 @@ const BACKGROUND_URL = 'https://firebasestorage.googleapis.com/v0/b/visualizer-n
 function BackgroundLayout () {
   return (
     <img
+      data-test='base-img'
       className='rounded-[25px]'
       src={BACKGROUND_URL}
     />

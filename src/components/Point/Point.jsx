@@ -12,6 +12,7 @@ function Point (props) {
 
   return (
     <div
+      data-test='point'
       onClick={onClick}
       style={{ left: `${point.coordX}%`, top: `${point.coordY}%` }}
       className={`${finalClass} absolute z-[4] hover:cursor-pointer hover:opacity-20`}

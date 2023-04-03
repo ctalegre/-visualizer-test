@@ -30,7 +30,7 @@ function SideBarMaterials (props) {
   const finalClass = showingInView !== 'Materials' ? 'hidden' : ''
 
   return (
-    <div className={`${finalClass} fixed right-[20px] top-[0px] z-[5] flex h-full items-center`}>
+    <div data-test='sidebar' className={`${finalClass} fixed right-[20px] top-[0px] z-[5] flex h-full items-center`}>
       <div className='flex flex-col items-end'>
         <div className='mx-[12px]'>
           <ArrowIcon direction='up' />
