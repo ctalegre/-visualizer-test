@@ -3,7 +3,7 @@ import { applyMaterialByPointId } from '../../redux/reducers/materialsSlice'
 import Material from './Material'
 import ArrowIcon from '../../assets/ArrowIcon'
 import { setActiveShowBackdrop, setActiveShowMaterials } from '../../redux/reducers/uiSlice'
-import { sleep } from '../utils/sleep'
+import { sleep } from '../../utils/sleep'
 
 function SideBarMaterials (props) {
   const dispatch = useDispatch()
