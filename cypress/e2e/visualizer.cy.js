@@ -8,6 +8,14 @@ describe.only('Capabilities VisualizerApp', async () => {
 
   it('opens and visits visualizer app', async () => {
     cy.visit('http://localhost:3000', { debug: true })
-    cy.get('img[data-test="visualizer-base-img"]').should('be.visible')
+
+    cy.intercept('POST', /firestore.googleapis.com/).as('getPoints')
+    cy.wait('@getPoints')
+
+    cy.get('img[data-test="base-img"]').should('be.visible')
+
+    cy.get('[data-test="point"]').should('be.equal', 4)
+
+    cy.get('[data-test="point"]').first().click()
   })
 })

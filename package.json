@@ -7,8 +7,8 @@
     "commitlint": "commitlint",
     "lint": "next lint",
     "lint:fix": "next lint --fix",
-    "e2e": "npx cypress run",
-    "e2e:browser": "npx cypress run --headed --no-exit"
+    "cy": "npx cypress run",
+    "cy:browser": "npx cypress run --headed --no-exit"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.3",
