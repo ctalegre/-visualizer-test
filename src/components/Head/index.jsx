@@ -3,7 +3,7 @@ import NextHead from 'next/head'
 function Head (props) {
   return (
     <NextHead>
-      <title>3d Room Configurator | Home</title>
+      <title>{props.title} | 3d Room Configurator</title>
       <meta itemProp='name' content={'3d Room configurator'} />
       {/* {description && <meta itemProp='description' content={description} />} */}
       {/* {image && <meta itemProp='image' content={image} />} */}
