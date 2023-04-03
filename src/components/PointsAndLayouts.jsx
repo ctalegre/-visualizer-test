@@ -1,13 +1,14 @@
 import { useEffect } from 'react'
-import Layout from './Layout/Layout'
-import Point from './Point/Point'
-
 import { useDispatch, useSelector } from 'react-redux'
+
 import { getPointsFromApi } from '../redux/reducers/pointsSlice'
 import { getMaterialsFromApi } from '../redux/reducers/materialsSlice'
 import { setActiveShowMaterials } from '../redux/reducers/uiSlice'
 
-function PointsAndLayouts (props) {
+import Layout from './Layout/Layout'
+import Point from './Point/Point'
+
+function PointsAndLayouts () {
   const dispatch = useDispatch()
 
   const pointList = useSelector((state) => state.pointsSlice.pointList)

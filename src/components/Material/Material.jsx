@@ -1,13 +1,14 @@
 import PropTypes from 'prop-types'
 import { useSelector } from 'react-redux'
-import { getPointIdOfMaterial } from '../../utils/getPointIdOfMaterial'
+
+import { getPointIdByMaterial } from '../../utils/getPointIdByMaterial'
 
 function Material (props) {
   const { material, onClick } = props
   const materialAppliedMap = useSelector((state) => state.materialsSlice.materialAppliedMap)
 
   function isMaterialActive () {
-    const pointId = getPointIdOfMaterial(material)
+    const pointId = getPointIdByMaterial(material)
     const activeName = materialAppliedMap[pointId]?.name
     return activeName === material.name
   }
