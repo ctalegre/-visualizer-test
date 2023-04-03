@@ -1,13 +1,12 @@
 import { initializeApp } from 'firebase/app'
 
-// TODO: ENV
 const config = {
-  apiKey: 'AIzaSyC_JwpXS4uj9sRRDrbFAtalE1QulNTmKnw',
-  authDomain: 'visualizer-new-devs-test.firebaseapp.com',
-  projectId: 'visualizer-new-devs-test',
-  storageBucket: 'visualizer-new-devs-test.appspot.com',
-  messagingSenderId: '702664185241',
-  appId: '1:702664185241:web:580752c50d570d0c89ef08'
+  apiKey: process.env.NEXT_PUBLIC_API_KEY,
+  authDomain: process.env.NEXT_PUBLIC_AUTH_DOMAIN,
+  projectId: process.env.NEXT_PUBLIC_PROJECT_ID,
+  storageBucket: process.env.NEXT_PUBLIC_STORAGE_BUCKET,
+  messagingSenderId: process.env.NEXT_PUBLIC_MESSAGING_SENDER_ID,
+  appId: process.env.NEXT_PUBLIC_APP_ID
 }
 
 const firebaseApp = initializeApp(config)

@@ -1,9 +1,9 @@
 {
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "dev": "env-cmd -f .env.local next dev",
+    "build": "env-cmd -f .env.local next build",
+    "start": "env-cmd -f .env.local next start",
     "commitlint": "commitlint",
     "lint": "next lint",
     "lint:fix": "next lint --fix"
@@ -19,6 +19,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.0",
+    "env-cmd": "^10.1.0",
     "eslint": "^8.37.0",
     "eslint-config-standard": "^17.0.0",
     "eslint-plugin-chai-friendly": "^0.7.2",
