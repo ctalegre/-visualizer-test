@@ -6,7 +6,7 @@ import PointsAndLayouts from '../components/PointsAndLayouts'
 
 export default function Home () {
   return (
-    <div className='flex min-h-screen flex-col items-center justify-center py-2 bg-[#c9c1bb]'>
+    <div className='flex min-h-screen flex-col items-center justify-center bg-[#c9c1bb] py-2'>
       <div className='relative'>
         <BackgroundLayout />
         <PointsAndLayouts />

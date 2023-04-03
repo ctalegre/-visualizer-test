@@ -1,6 +1,7 @@
 import { useDispatch, useSelector } from 'react-redux'
 import { applyMaterialByPointId } from '../../redux/reducers/materialsSlice'
 import Material from './Material'
+import ArrowIcon from '../../assets/ArrowIcon'
 
 function SideBarMaterials (props) {
   const dispatch = useDispatch()
@@ -18,12 +19,22 @@ function SideBarMaterials (props) {
   }
 
   return (
-    <div className='fixed right-[20px] top-[150px] z-[5] flex flex-col items-end'>
-      {materialList.map((material, i) => <Material
-        key={i}
-        onClick={() => applyMaterial(material)}
-        material={material}
-      />)}
+    <div className='fixed right-[20px] top-[0px] z-[5] flex h-full items-center'>
+      <div className='flex flex-col items-end'>
+        <div className='mx-[12px]'>
+          <ArrowIcon direction='up' />
+        </div>
+        <div className='my-[25px] flex h-[65vh] flex-col items-end'>
+          {materialList.map((material, i) => <Material
+            key={i}
+            onClick={() => applyMaterial(material)}
+            material={material}
+            />)}
+        </div>
+        <div className='mx-[12px]'>
+          <ArrowIcon />
+        </div>
+      </div>
     </div>
   )
 }
