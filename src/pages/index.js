@@ -1,10 +1,8 @@
-
-import Loading from '../components/Loading'
-import BackgroundLayout from '../components/Layout/BackgroundLayout'
-import SideBarMaterials from '../components/Material/SideBarMaterials'
-
-import PointsAndLayouts from '../components/PointsAndLayouts'
 import Head from '../components/Head'
+import BackgroundLayout from '../components/Layout/BackgroundLayout'
+import PointsAndLayouts from '../components/PointsAndLayouts'
+import SideBarMaterials from '../components/Material/SideBarMaterials'
+import Loading from '../components/Loading'
 
 export default function Home () {
   return (
