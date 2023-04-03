@@ -7,7 +7,7 @@ function Layout (props) {
   return (
     <img
       src={props.src}
-      className={`absolute left-0 top-0 h-full w-full ${zIndexClass}`}
+      className={`absolute left-0 top-0 h-full w-full rounded-[25px] ${zIndexClass}`}
     />
   )
 }

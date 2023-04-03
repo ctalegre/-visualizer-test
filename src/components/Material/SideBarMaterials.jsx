@@ -18,7 +18,7 @@ function SideBarMaterials (props) {
   }
 
   return (
-    <div className='fixed right-0 top-0 z-[5] flex flex-col items-end'>
+    <div className='fixed right-[20px] top-[150px] z-[5] flex flex-col items-end'>
       {materialList.map((material, i) => <Material
         key={i}
         onClick={() => applyMaterial(material)}
