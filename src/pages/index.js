@@ -4,7 +4,7 @@ import Head from '../components/Head'
 import BackgroundLayout from '../components/Layout/BackgroundLayout'
 import PointsAndLayouts from '../components/PointsAndLayouts'
 import SideBarMaterials from '../components/Material/SideBarMaterials'
-import LoadingPage from '../components/LoadingPage'
+import ScreenLoading from '../components/ScreenLoading'
 
 export default function Kitchen () {
   const title = useSelector((state) => state.roomSlice.description)
@@ -15,7 +15,7 @@ export default function Kitchen () {
         <BackgroundLayout />
         <PointsAndLayouts />
         <SideBarMaterials />
-        <LoadingPage />
+        <ScreenLoading />
       </div>
     </div>
   )
