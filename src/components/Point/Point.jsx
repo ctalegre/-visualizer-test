@@ -1,5 +1,6 @@
-// import PropTypes from 'prop-types'
+import PropTypes from 'prop-types'
 import { useSelector } from 'react-redux'
+
 const FINGERPRINT = 'https://cdn-icons-png.flaticon.com/512/890/890122.png'
 
 function Point (props) {
@@ -29,6 +30,9 @@ function Point (props) {
   )
 }
 
-Point.propTypes = {}
+Point.propTypes = {
+  point: PropTypes.object,
+  onClick: PropTypes.func
+}
 
 export default Point

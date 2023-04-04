@@ -9,11 +9,10 @@ import ArrowIcon from '../../assets/ArrowIcon'
 import { sleep } from '../../utils/sleep'
 import { getPointIdByMaterial } from '../../utils/getPointIdByMaterial'
 
-function SideBarMaterials (props) {
+function SideBarMaterials () {
   const dispatch = useDispatch()
 
   const materialList = useSelector((state) => state.materialsSlice.materialList)
-  // const isLoadingMaterialList = useSelector((state) => state.pointsSlice.isLoading)
 
   async function applyMaterial (material) {
     const pointId = getPointIdByMaterial(material)

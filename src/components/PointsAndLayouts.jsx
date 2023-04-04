@@ -12,8 +12,6 @@ function PointsAndLayouts () {
   const dispatch = useDispatch()
 
   const pointList = useSelector((state) => state.pointsSlice.pointList)
-  // const isPointListLoading = useSelector((state) => state.pointsSlice.isLoading)
-  // const errorInPointList = useSelector((state) => state.pointsSlice.error)
 
   useEffect(() => {
     dispatch(getPointsFromApi())
