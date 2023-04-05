@@ -8,7 +8,8 @@
     "lint": "next lint",
     "lint:fix": "next lint --fix",
     "cy": "npx cypress run",
-    "cy:browser": "npx cypress run --e2e --headed --no-exit"
+    "cy:browser": "npx cypress run --e2e --headed --no-exit",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.3",
