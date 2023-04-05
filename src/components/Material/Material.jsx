@@ -1,11 +1,12 @@
 import PropTypes from 'prop-types'
-import { useSelector } from 'react-redux'
+import { useContext } from 'react'
+import MaterialContext from '../../contexts/MaterialsContext'
 
 import { getPointIdByMaterial } from '../../utils/getPointIdByMaterial'
 
 function Material (props) {
   const { material, onClick } = props
-  const materialAppliedMap = useSelector((state) => state.materialsSlice.materialAppliedMap)
+  const { materialAppliedMap } = useContext(MaterialContext)
 
   function isMaterialActive () {
     const pointId = getPointIdByMaterial(material)

@@ -1,13 +1,14 @@
-import { useSelector } from 'react-redux'
+import { useContext } from 'react'
+import RoomContext from '../../contexts/RoomContext'
 
 function BackgroundLayout () {
-  const backgrounImage = useSelector((state) => state.roomSlice.backgroundImage)
+  const { backgroundImage } = useContext(RoomContext)
 
   return (
     <img
       data-test='base-img'
       className='rounded-[25px]'
-      src={backgrounImage}
+      src={backgroundImage}
     />
   )
 }

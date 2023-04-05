@@ -1,11 +1,12 @@
 import PropTypes from 'prop-types'
-import { useSelector } from 'react-redux'
+import { useContext } from 'react'
+import UiContext from '../../contexts/UiContext'
 
 const FINGERPRINT = 'https://cdn-icons-png.flaticon.com/512/890/890122.png'
 
 function Point (props) {
   const { point, onClick } = props
-  const showingInView = useSelector((state) => state.uiSlice.showingInView)
+  const { showingInView } = useContext(UiContext)
 
   if (point.coordX < 0 || point.coordY < 0) return ''
 

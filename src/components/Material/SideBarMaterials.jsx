@@ -1,7 +1,7 @@
-import { useDispatch, useSelector } from 'react-redux'
+import { useContext } from 'react'
 
-import { applyMaterialByPointId } from '../../redux/reducers/materialsSlice'
-import { setActiveShowBackdrop, setActiveShowMaterials } from '../../redux/reducers/uiSlice'
+import MaterialsContext from '../../contexts/MaterialsContext'
+import UiContext from '../../contexts/UiContext'
 
 import Material from './Material'
 import ArrowIcon from '../../assets/ArrowIcon'
@@ -10,26 +10,24 @@ import { sleep } from '../../utils/sleep'
 import { getPointIdByMaterial } from '../../utils/getPointIdByMaterial'
 
 function SideBarMaterials () {
-  const dispatch = useDispatch()
-
-  const materialList = useSelector((state) => state.materialsSlice.materialList)
+  const { materialList, applyMaterialByPointId } = useContext(MaterialsContext)
+  const { setActiveShowBackdrop, setActiveShowMaterials, showingInView } = useContext(UiContext)
 
   async function applyMaterial (material) {
     const pointId = getPointIdByMaterial(material)
     const materialUrl = material.layers[pointId]
     const name = material.name
 
-    dispatch(applyMaterialByPointId({ pointId, name, image: materialUrl }))
+    applyMaterialByPointId({ pointId, name, image: materialUrl })
     await applyLoadingApply()
   }
 
   async function applyLoadingApply () {
-    dispatch(setActiveShowBackdrop())
+    setActiveShowBackdrop()
     await sleep(150)
-    dispatch(setActiveShowMaterials())
+    setActiveShowMaterials()
   }
 
-  const showingInView = useSelector((state) => state.uiSlice.showingInView)
   const finalClass = showingInView !== 'Materials' ? 'hidden' : ''
 
   return (

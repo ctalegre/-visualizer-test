@@ -1,14 +1,21 @@
 import '../../styles/globals.css'
 
-import { Provider } from 'react-redux'
-
-import store from '../redux/store'
+import { MaterialsProvider } from '../contexts/MaterialsContext'
+import { PointsProvider } from '../contexts/PointsContext'
+import { UiProvider } from '../contexts/UiContext'
+import { RoomProvider } from '../contexts/RoomContext'
 
 function MyApp ({ Component, pageProps }) {
   return (
-    <Provider store={store}>
-      <Component {...pageProps} />
-    </Provider>
+    <RoomProvider>
+      <UiProvider>
+        <MaterialsProvider>
+          <PointsProvider>
+            <Component {...pageProps} />
+          </PointsProvider>
+        </MaterialsProvider>
+      </UiProvider>
+    </RoomProvider>
   )
 }
 export default MyApp

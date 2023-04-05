@@ -1,28 +1,26 @@
-import { useEffect } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
+import { useEffect, useContext } from 'react'
 
-import { getPointsFromApi } from '../redux/reducers/pointsSlice'
-import { getMaterialsFromApi } from '../redux/reducers/materialsSlice'
-import { setActiveShowMaterials } from '../redux/reducers/uiSlice'
+import PointsContext from '../contexts/PointsContext'
+import MaterialsContext from '../contexts/MaterialsContext'
+import UiContext from '../contexts/UiContext'
 
 import Layout from './Layout/Layout'
 import Point from './Point/Point'
 
 function PointsAndLayouts () {
-  const dispatch = useDispatch()
-
-  const pointList = useSelector((state) => state.pointsSlice.pointList)
+  const { pointList, getPointsFromApi } = useContext(PointsContext)
+  const { getMaterialsFromApi, materialAppliedMap } = useContext(MaterialsContext)
+  const { setActiveShowMaterials } = useContext(UiContext)
 
   useEffect(() => {
-    dispatch(getPointsFromApi())
-  }, [dispatch])
+    getPointsFromApi()
+  }, [getPointsFromApi])
 
   const loadMaterials = async (pointId) => {
-    dispatch(getMaterialsFromApi(pointId))
-    dispatch(setActiveShowMaterials())
+    getMaterialsFromApi(pointId)
+    setActiveShowMaterials()
   }
 
-  const materialAppliedMap = useSelector((state) => state.materialsSlice.materialAppliedMap)
   return pointList.map((point, i) => {
     const selectedMaterial = materialAppliedMap[point._id]
     return (

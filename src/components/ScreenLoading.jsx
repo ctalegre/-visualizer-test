@@ -1,7 +1,8 @@
-import { useSelector } from 'react-redux'
+import { useContext } from 'react'
+import UiContext from '../contexts/UiContext'
 
 function ScreenLoading () {
-  const showingInView = useSelector((state) => state.uiSlice.showingInView)
+  const { showingInView } = useContext(UiContext)
 
   const finalClass = showingInView !== 'Loading' ? 'hidden' : ''
   return (
